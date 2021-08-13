@@ -10,7 +10,7 @@ function Home(props) {
     <div>
       <div>
         <MainPageMenu />
-        <Router>
+        <Router basename="/rsweb/">
           <Switch>
             <Route
               path="/"

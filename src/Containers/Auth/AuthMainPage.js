@@ -10,11 +10,15 @@ function AuthMainPage() {
   const state = useSelector((state) => state);
   return (
     <div>
-      <Router>
+      <Router basename="/">
         <Switch>
-          <Route path="/" exact render={(props) => <AuthLogin {...props} />} />
           <Route
-            path="/register/"
+            path="/rsweb/"
+            exact
+            render={(props) => <AuthLogin {...props} />}
+          />
+          <Route
+            path="/rsweb/register/"
             exact
             render={(props) => <AuthRegister {...props} />}
           />

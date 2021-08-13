@@ -82,8 +82,9 @@ export default function Register() {
     setPassword(event.target.value);
   };
 
-  function handleClick() {
-    history.push("/");
+  function handleClick(password) {
+    dispatch(authSignup(password));
+    history.push("/rsweb/");
   }
   return (
     <Grid container component="main" className={classes.root}>
@@ -116,7 +117,7 @@ export default function Register() {
             variant="contained"
             color="primary"
             className={classes.submit}
-            onClick={() => dispatch(authSignup(password))}
+            onClick={() => handleClick(password)}
           >
             Complete Registration
           </Button>

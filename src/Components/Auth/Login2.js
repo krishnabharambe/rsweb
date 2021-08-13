@@ -141,7 +141,7 @@ export default function Login2() {
               <Link
                 variant="body2"
                 to={{
-                  pathname: "/register/",
+                  pathname: "/rsweb/register/",
                 }}
               >
                 {"Don't have an account? Sign Up"}
