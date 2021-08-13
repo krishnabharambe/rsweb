@@ -40,7 +40,7 @@ export default function FrontCard() {
 
   const retriveAllMainServices = async () => {
     const response = await axios.get(
-      "http://krishnabharambe.pythonanywhere.com/services/MainServicesList/"
+      "https://krishnabharambe.pythonanywhere.com/services/MainServicesList/"
     );
     console.log(response);
     return response.data;
